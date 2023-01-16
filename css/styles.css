@@ -74,6 +74,7 @@ body {
 .list {
   list-style: none;
 }
+/* ========================================== /Body ==========================================  */
 
 /*========================================== Header ==========================================*/
 .header {
@@ -165,6 +166,7 @@ body {
 .header-contact-link:focus {
   color: var(--pressed-state-color);
 }
+/*========================================== /Header ==========================================*/
 
 /* =====================Section 1 Effective Solutions for Your Business===================== */
 
@@ -223,6 +225,7 @@ body {
 .solution-btn:hover {
   background-color: var(--pressed-state-color);
 }
+/* =====================/Section 1 Effective Solutions for Your Business===================== */
 
 /*================================ Secrtion 2 Main principles ================================*/
 
@@ -234,13 +237,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  /* max-width: 1128px; */
 }
 
 .principles-item {
   max-width: 264px;
-  /* flex-basis: calc((100% - 24px) / 4); */
 }
+
 .principles-title {
   font-weight: 500;
   font-size: 20px;
@@ -266,6 +268,8 @@ body {
   width: 264px;
   height: 112px;
 }
+
+/*================================ /Secrtion 2 Main principles ================================*/
 
 /*=============================== Section 3 What are we doing ===============================*/
 
