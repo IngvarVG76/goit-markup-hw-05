@@ -121,9 +121,10 @@ body {
   color: var(--dakr-overlays-headings);
   padding-top: 24px;
   padding-bottom: 28px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:after {
+.header-list:after {
   content: "";
   width: 48px;
   height: 4px;
@@ -152,6 +153,7 @@ body {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 28px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-link:hover,
@@ -209,6 +211,7 @@ body {
   height: 56px;
   border: none;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .solution-btn:focus,
@@ -368,11 +371,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon-link:hover,
 .social-icon-link:focus {
-  background: var(--pressed-state-color);
+  background-color: var(--pressed-state-color);
 }
 
 .social-icon {
@@ -410,6 +414,7 @@ body {
 
 .customer-item {
 }
+
 .customer-link {
   display: flex;
   justify-content: center;
@@ -418,20 +423,22 @@ body {
   height: 88px;
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-icon {
   fill: var(--subtle-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customer-item:hover .customer-link,
-.customer-item:focus .customer-link {
+.customer-link:hover,
+.customer-link:focus {
   border: 1px solid #404bbf;
-  fill: #404bbf;
+  
 }
 
-.customer-item:hover .customer-icon,
-.customer-item:focus .customer-icon {
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon {
   fill: var(--pressed-state-color);
 }
 /*====================================== Footer section ======================================*/
@@ -499,11 +506,12 @@ body {
   height: 40px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link:hover,
 .social-media-link:focus {
-  background: #31d0aa;
+  background-color: #31d0aa;
 }
 
 .social-media-icon {
@@ -541,6 +549,7 @@ body {
 
   border: 1px solid var(--accent-background-color);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .solutions-filter-btn:hover,
@@ -564,6 +573,7 @@ body {
 .solution-result-item {
   /* position: relative; */
   width: 360px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .solution-result-wrap {
@@ -583,8 +593,8 @@ body {
   top: 0px;
   width: 100%;
   height: 100%;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   background-color: #4d5ae5;
   font-size: 16px;
   line-height: 1.5;
@@ -601,11 +611,6 @@ body {
 .solution-result-wrap:hover .solution-overlay-text,
 .solution-result-wrap:focus .solution-overlay-text {
   transform: translateY(0);
-}
-
-.solution-result-item:hover 
-.solution-result-item:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .solution-item-wrap {
